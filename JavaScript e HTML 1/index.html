@@ -7,8 +7,12 @@
     <title>JavaScript e HTML 1</title>
 </head>
 <body>
+    <h1>JavaScript e HTML 1</h1>
+    
+    <h2>Concatenação</h2>
     <script>
         // Concatenação
+        document.write("Concatenação" + "<br>");
         document.write("A idade de Marcos é: ");
         document.write("18" + 20);
         document.write("<br>");
@@ -20,8 +24,10 @@
         document.write("<br>")
     </script>
 
+    <h2>Operações com textos e números</h2>
     <script>
         // Operações com textos e números
+        document.write("Operações com textos e números" + "<br>");
         document.write("Marcos nasceu em: " + (2016 + 39));
         document.write("<br>");
         document.write("Joaquim nasceu em: " + (2016 - 20));
@@ -29,11 +35,12 @@
         document.write("Barney nasceu em: " + (2016 - 40));
         document.write("<br>");
         document.write("<br>");
-        document.write("<br>");
     </script>
 
+    <h2>Reduzindo alterações</h2>
     <script>
         // Reduzindo alterações
+        document.write("Reduzindo alterações" + "<br>");
         var ano = 2016;
 
         document.write("Marcos tem " + (ano - 1977) + " anos");
@@ -46,6 +53,31 @@
         document.write("<br>");
         document.write("<br>");
         document.write("<br>");
+    </script>
+
+    <h2>Variáveis</h2>
+    <script>
+        // Variáveis
+        document.write("A média das idades é " + (39 + 20 + 41) /3);
+
+        var media = (39 + 20 + 41) /3;
+        document.write("<br>");
+        document.write('A média das idades é ' + Math.round(media)); // Math.round arredonda o número.
+        document.write("<br>");
+        document.write("<br>");
+
+        var idadeFlavio = 39;
+        var idadeJoaquim = 20;
+        var idadeBarney = 41;
+
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney) /3;
+        document.write("A média das idade é " + Math.round(media));
+        document.write("<br>");
+        document.write("<br>");
+
+        var nome = "Sofia";
+        var idadeSofia = "30";
+        document.write("A idade de " + nome + " é " + idadeSofia);
     </script>
 
     
