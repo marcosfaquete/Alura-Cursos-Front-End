@@ -37,5 +37,26 @@
         calculaImc(alturaAna, pesoAna);
     </script>
     
+    <h2>Tipo 2</h2>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase) 
+                pulaLinha();
+        }
+        
+        function calculaImc(altura1, peso1, altura2, peso2) {
+            var imc1 = peso1 / (altura1 * altura1);
+            var imc2 = peso2 / (altura2 * altura2);
+            var imcTotal = imc1 + imc2;
+            mostra("A soma dos imc's é: " + imcTotal);
+        }
+
+        calculaImc(1.72, 73, 1.72, 68);
+    </script>
 </body>
 </html>
