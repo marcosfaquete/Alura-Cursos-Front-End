@@ -80,7 +80,26 @@
         document.write("A idade de " + nome + " é " + idadeSofia);
     </script>
 
-    
-    
+    <h2>Funções com parâmetros</h2>
+    <script>
+        // Funções com parâmetros
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();    // Chamando uma função dentro de outra função.
+        }
+
+        var ano = 2023;
+
+        mostra("Marcos tem " + (ano - 1977) + " anos");
+
+        mostra("Ana tem " + (ano - 1980) + " anos");
+
+        mostra("Nina tem " + (ano - 1995) + " anos");
+    </script>
 </body>
 </html>
